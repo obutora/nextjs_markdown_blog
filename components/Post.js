@@ -9,6 +9,7 @@ export default function Post({ post }) {
                 <div className='post-date'>{post.frontmatter.date} </div>
                 <h3>{post.frontmatter.title}</h3>
 
+                {/* ここでblog/[slug]に飛ばす */}
                 <Link href={`/blog/${post.slug}`}><a className="btn">Read more</a></Link>
             </div>
         </>
