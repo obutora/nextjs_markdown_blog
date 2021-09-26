@@ -3,17 +3,20 @@ import path from 'path'
 import matter from 'gray-matter'
 import marked from 'marked'
 import Link from 'next/link'
+import btnStyle from '../../styles/button.module.css'
 
 export default function PostPage({ frontmatter: { title, date, cover_image },
     slug,
     content }) {
     return (
-        <div>
-            <Link href="/">
-                <a className='btn btn-back'>もどる</a>
-            </Link>
-            <div className="card card-page">
-                <h1 className='post-title'>{title}</h1>
+        <div className="space-y-3">
+            <div className={btnStyle.btn + ' my-3 ' + btnStyle.btnS}>
+                <Link href="/">
+                    <a >もどる</a>
+                </Link>
+            </div>
+            <div className="p-5 bg-white mx-3 rounded-2xl shadow-xl inline-block max-w-sm sm:max-w-lg md:max-w-xl lg:max-w-3xl 2xl:max-w-5xl">
+                <h1 className='text-3xl'>{title}</h1>
                 <img src={cover_image} />
                 <div className="post-body">
 

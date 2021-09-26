@@ -1,0 +1,32 @@
+
+
+@layer components{
+    .btn {
+        @apply
+        inline-block ml-5 px-3 py-4 rounded-lg
+        focus:outline-none focus:ring focus:ring-offset-4
+        hover:-translate-y-0.5
+        uppercase tracking-wider
+        font-semibold shadow-lg text-sm 
+        focus:ring-opacity-20 transform transition
+    }
+
+    .btnP {
+        @apply 
+        bg-blue-500
+        hover:bg-blue-400 active:bg-blue-500 
+         focus:ring-blue-500 
+        text-white 
+    }
+
+    .btnS {
+        @apply 
+        bg-gray-300
+        hover:bg-gray-400 active:bg-gray-600 
+         focus:ring-blue-500
+        text-gray-800
+    }
+}
+
+
+
