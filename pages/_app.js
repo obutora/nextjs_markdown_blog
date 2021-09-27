@@ -1,6 +1,8 @@
-// import '../styles/globals.css'
-import 'tailwindcss/tailwind.css'
+
+// import 'tailwindcss/tailwind.css'
+import '../styles/globals.css'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 
 function MyApp({ Component, pageProps }) {
@@ -9,6 +11,7 @@ function MyApp({ Component, pageProps }) {
     <main className="container">
       <Component {...pageProps} />
     </main>
+    <Footer />
   </div>
 
 }

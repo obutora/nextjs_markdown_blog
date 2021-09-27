@@ -1,9 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap'); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html,
+@layer base {
+  h1 {
+    @apply text-3xl text-gray-800 font-black tracking-tight
+    my-5
+  }
+
+  h2 {
+    @apply text-2xl text-gray-800 my-3 font-bold tracking-normal
+  }
+
+  h3 {
+    @apply text-xl text-gray-800 my-2 font-semibold tracking-normal
+  }
+
+  p {
+    @apply text-sm font-normal text-gray-700 mb-1 tracking-wide
+  }
+
+  a {
+    @apply font-semibold cursor-pointer underline text-primary
+    transform transition hover:-translate-y-1 hover:scale-110
+  }
+
+  body {
+    @apply bg-gray-100 font-sans
+  }
+
+  ul {
+    @apply bg-gray-100 p-4 space-y-2 mb-4
+    rounded-lg shadow-md
+  }
+
+  li {
+    @apply list-disc ml-5
+    text-sm font-normal text-gray-700 mb-1 tracking-wide
+  }
+
+  img {
+    @apply my-4
+  }
+}
+
+/* html,
 body {
   background-color: grey;
   padding: 0;
@@ -72,4 +114,4 @@ ol {
   .posts {
     grid-template-columns: 1fr;
   }
-}
+} */
