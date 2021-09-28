@@ -18,36 +18,42 @@ export default function Home({ posts }) {
       </Head>
 
 
-      <div className="block text-center py-5 ">
-        <Image src={iconSrc} width='240px' height='240px' className="rounded-2xl shadow-md  mx-auto" />
-        <div className="bg-white rounded-2xl shadow-md mx-5 mt-3">
-          <p className="py-5">👋Hagakun.devへようこそ！<br /><br />
-            私は薬剤師として、<br />
-            薬を通じて健康のサポートをします。<br /><br />
+      <div className="block p-5">
+        <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 items-stretch gap-3">
 
-            さらに、みんなの心をサポートするような<br />
+          <Image src={iconSrc} className="inline-block w-10 rounded-2xl object-contain object-center" />
 
-            アプリやサービスを作っています。<br /><br />
+          <div className="bg-white rounded-2xl shadow-md text-center flex justify-center flex-row  items-center">
+            <p className="py-5 text-gray-700">👋Hagakun.devへようこそ！<br /><br />
+              私は薬剤師として、<br />
+              薬を通じて健康のサポートをします。<br /><br />
 
-            生活が少しでもラクに。<br /><br />
+              さらに、みんなの心をサポートするような<br />
 
-            生活がちょこっと幸せに。<br /><br />
+              アプリやサービスを作っています。<br /><br />
 
-            自分の人生を、自分らしく生きれるように。<br />
+              生活が少しでもラクに。<br /><br />
 
-            そんな、手助けをしていきます。
-            <br />
-          </p>
+              生活がちょこっと幸せに。<br /><br />
+
+              自分の人生を、自分らしく生きれるように。<br />
+
+              そんな、手助けをしていきます。
+              <br />
+            </p>
+          </div>
         </div>
-      </div>
+      </div >
+
+      <hr className="m-5" />
 
 
-      <div className='posts grid sm:grid-cols-2 mb-10'>
+      <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-3 justify-center content-start items-stretch'>
         {posts.map((post, index) => (
           <Post key={index} post={post} />
         ))}
       </div>
-    </div>
+    </div >
   )
 }
 

@@ -8,7 +8,7 @@ import Footer from '../components/Footer'
 function MyApp({ Component, pageProps }) {
   return <div className='bg-gray-100'>
     <Header />
-    <main className="container">
+    <main>
       <Component {...pageProps} />
     </main>
     <Footer />

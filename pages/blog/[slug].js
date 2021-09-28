@@ -10,7 +10,7 @@ export default function PostPage({ frontmatter: { title, description, cover_imag
     content }) {
 
     return (
-        <div className="p-5 bg-white rounded-2xl shadow-xl blockmy-5 mx-5 my-3 sm:mx-10">
+        <div className="prose p-5 prose-blue bg-white rounded-2xl shadow-xl blockmy-5 mx-5 my-3 sm:mx-10">
             <h1>{title}</h1>
             <img src={cover_image} />
             <div className="post-body ">
