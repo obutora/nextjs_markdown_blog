@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-export default function Header() {
+export default function Footer() {
 
     return (
         <header className="bg-primary">
