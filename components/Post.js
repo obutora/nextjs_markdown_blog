@@ -11,7 +11,7 @@ export default function Post({ post }) {
 
     return (
         <>
-            <div className="m-3 flex items-stretch">
+            <div className="prose m-3 flex items-stretch">
                 <div className='rounded-xl bg-white mx-auto pb-1 max-w-lg shadow-lg sm:max-w-2xl'>
                     <img src={post.frontmatter.cover_image} className="object-cover rounded-t-2xl" />
 

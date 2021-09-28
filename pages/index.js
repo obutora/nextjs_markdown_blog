@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import iconSrc from '../public/icon.png'
 import fs from 'fs'
 import path from 'path'
@@ -21,10 +20,10 @@ export default function Home({ posts }) {
       <div className="block p-5">
         <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 items-stretch gap-3">
 
-          <Image src={iconSrc} className="inline-block w-10 rounded-2xl object-contain object-center" />
+          <img src='/icon.png' className="rounded-2xl justify-self-stretch object-contain object-center" />
 
           <div className="bg-white rounded-2xl shadow-md text-center flex justify-center flex-row  items-center">
-            <p className="py-5 text-gray-700">👋Hagakun.devへようこそ！<br /><br />
+            <p className="prose-sm lg:prose-lg py-5 text-gray-700">👋Hagakun.devへようこそ！<br /><br />
               私は薬剤師として、<br />
               薬を通じて健康のサポートをします。<br /><br />
 
