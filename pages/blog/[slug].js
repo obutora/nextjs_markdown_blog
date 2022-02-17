@@ -5,6 +5,10 @@ import { marked } from 'marked'
 import Link from 'next/link'
 import Image from 'next/image'
 import btnStyle from '../../styles/button.module.css'
+import Script from 'next/script'
+import cheerio from 'cheerio'
+import hljs from 'highlight.js'
+import 'highlight.js/styles/atom-one-dark.css';
 
 export default function PostPage({ frontmatter: { title, description, cover_image },
     slug,
@@ -12,17 +16,18 @@ export default function PostPage({ frontmatter: { title, description, cover_imag
 
     return (
         <div>
-            <div className="px-8 md:mx-20 bg-white py-8 flex flex-col items-center">
-                <h1>{title}</h1>
-                <Image src={cover_image} layout='fixed' objectFit='contain' width={600} height={400} alt={title + 'Top Image'} />
-                <div>
-
-                    <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
+            <Script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></Script>
+            <div className="px-12 md:mx-20 bg-white py-8 flex flex-col items-center shadow-lg shadow-sky-400/20">
+                <h1 className='my-4'>{title}</h1>
+                <Image src={cover_image} layout='fixed' objectFit='contain' width={400} height={200} className='w-full' res alt={title + 'Top Image'} />
+                <div className='mt-4'>
+                    <div dangerouslySetInnerHTML={{ __html: content }} />
                 </div>
 
 
             </div>
             <div className='text-center my-12'>
+
                 <Link href={`/`}>
                     <div className={btnStyle.btn + ' ' + btnStyle.btnP}>
                         トップにもどる
@@ -54,12 +59,22 @@ export async function getStaticProps({ params: { slug } }) {
 
     const { data: frontmatter, content } = matter(markdownWithMeta)
 
+    const mark = marked(content)
+
+    const $ = cheerio.load(mark)
+
+    $('pre code').each((_, elm) => {
+        const result = hljs.highlightAuto($(elm).text())
+        $(elm).html(result.value)
+        $(elm).addClass('hljs')
+    })
+
     return {
 
         props: {
             frontmatter,
             slug,
-            content
+            content: $.html()
         }
     }
 }

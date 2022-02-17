@@ -22,7 +22,7 @@ export default function Home({ posts }) {
       <div className="bg-white rounded-2xl shadow-lg shadow-blue-200/20 px-8 mx-8 md:mx-20 mt-8">
         <div className="flex flex-col sm:flex-row rounded-2xl">
 
-          <Image src='/icon.png' className="object-contain " width={300} height={300} />
+          <Image src='/icon.png' className="object-contain " width={300} height={300} alt={'top image'} />
 
           <div className="ml-8 flex justify-center flex-row  items-center">
             <p className="prose-sm lg:prose-lg py-5 text-natural-600">

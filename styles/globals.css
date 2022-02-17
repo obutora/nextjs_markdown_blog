@@ -11,15 +11,16 @@
   }
 
   h2 {
-    @apply text-xl text-slate-700 mt-8 font-bold tracking-normal
+    @apply text-2xl text-slate-700 font-bold tracking-normal
+    bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-fuchsia-600
   }
 
   h3 {
-    @apply text-xl text-slate-700 mt-16 font-semibold tracking-normal
+    @apply text-xl text-slate-700 font-semibold tracking-normal
   }
 
   p {
-    @apply text-base font-normal text-gray-600 mt-4 leading-relaxed tracking-tight
+    @apply text-lg font-normal text-gray-600 mt-4 leading-9 tracking-tight mb-8
   }
 
   a {
@@ -33,12 +34,17 @@
   }
 
   li {
-    @apply text-base text-gray-700 leading-7 tracking-wider
+    @apply text-base text-gray-700 leading-10 tracking-wider
   }
 
- img{
- @apply content-center
- }
+  code {
+    @apply border-4 border-slate-300 rounded-xl shadow-lg shadow-primary/30
+    my-8;
+  }
+
+  strong {
+    @apply font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-sky-500
+  }
 
   blackquote {
     @apply bg-gray-100

@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import Head from 'next/head'
 import { useRouter } from 'next/router'
 
 function detector(path, word) {
@@ -18,10 +19,13 @@ export default function Header() {
 
     return (
         <header className="bg-primary">
+            <Head>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            </Head>
             <div className="p-3 ml-3 space-x-4 flex items-center">
                 <Link href='/'>
                     <div className='flex items-center'>
-                        <Image src='/logo_200.png' width={50} height={50} />
+                        <Image src='/logo_200.png' width={50} height={50} alt={'header logo'} />
                         <div className='mx-2'></div>
                         <a className={detector(router.pathname, '/')}>Home</a>
                     </div>

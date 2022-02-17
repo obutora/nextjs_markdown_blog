@@ -31,7 +31,6 @@ export default function Post({ post }) {
                                 もっと読む
                             </div>
                         </Link>
-                        {/* <div className={btnStyle.btn + ' ' + btnStyle.btnSecoundary}>あいうえお</div> */}
                     </div>
                 </div>
             </div>

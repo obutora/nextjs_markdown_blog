@@ -9,6 +9,9 @@ module.exports = {
       ],
       body: [
         'Inter', "Helvetica Neue", 'Arial', "Hiragino Kaku Gothic ProN", "Hiragino Sans", 'Meiryo', 'sans-serif'
+      ],
+      mono: [
+        'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace'
       ]
     },
     extend: {
