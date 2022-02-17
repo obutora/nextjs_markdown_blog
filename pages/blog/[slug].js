@@ -3,6 +3,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import { marked } from 'marked'
 import Link from 'next/link'
+import Image from 'next/image'
 import btnStyle from '../../styles/button.module.css'
 
 export default function PostPage({ frontmatter: { title, description, cover_image },
@@ -11,9 +12,9 @@ export default function PostPage({ frontmatter: { title, description, cover_imag
 
     return (
         <div>
-            <div className="px-8 md:mx-20 bg-white py-8">
+            <div className="px-8 md:mx-20 bg-white py-8 flex flex-col items-center">
                 <h1>{title}</h1>
-                <img src={cover_image} />
+                <Image src={cover_image} layout='fixed' objectFit='contain' width={600} height={400} alt={title + 'Top Image'} />
                 <div>
 
                     <div dangerouslySetInnerHTML={{ __html: marked(content) }} />

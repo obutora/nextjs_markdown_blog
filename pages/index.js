@@ -12,7 +12,7 @@ export default function Home({ posts }) {
   return (
     <div className='font-body'>
       <Head>
-        <title>Hagakun's Portfolio</title>
+        <title>Hagakun&apos;s Portfolio</title>
         <meta name="description" content="Hagakunのポートフォリオサイトです。作ってきたコンテンツを紹介します。" />
         <meta name="robots" content="index" />
         <link rel="icon" href="/favicon.ico" />
@@ -28,7 +28,7 @@ export default function Home({ posts }) {
             <p className="prose-sm lg:prose-lg py-5 text-natural-600">
               <p className='md:my-4 text-xl md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-fuchsia-600'>This is</p>
               <h1 className='m-0 pb-4 text-3xl md:text-4xl xl:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-fuchsia-600'>
-                Hagakun's Portfolio
+                Hagakun&apos;s Portfolio
               </h1>
               私は薬剤師として働きながら、<br />
               技術で業務をサポートするアプリやサービスを作っています。<br />
