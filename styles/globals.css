@@ -4,38 +4,41 @@
 @tailwind utilities;
 
 @layer base {
-  /* h1 {
-    @apply text-3xl text-gray-800 font-black tracking-tight
-    my-5
+  h1 {
+    @apply text-3xl text-gray-700 font-bold font-body
+    bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-fuchsia-600
+    mt-20 mb-4
   }
 
   h2 {
-    @apply text-2xl text-gray-800 my-3 font-bold tracking-normal
+    @apply text-xl text-slate-700 mt-8 font-bold tracking-normal
   }
 
   h3 {
-    @apply text-xl text-gray-800 my-2 font-semibold tracking-normal
+    @apply text-xl text-slate-700 mt-16 font-semibold tracking-normal
   }
 
   p {
-    @apply text-sm font-normal text-gray-700 mt-5 tracking-wide
+    @apply text-base font-normal text-gray-600 mt-4 leading-relaxed tracking-tight
   }
- */
 
   a {
     @apply font-semibold cursor-pointer underline text-primary
-    transform transition hover:-translate-y-1 hover:scale-110
+    transform transition hover:-translate-y-1 hover:scale-105
   }
   
   ul {
-    @apply bg-gray-100 p-4 space-y-2 mb-4
-    rounded-lg shadow-md
+    @apply px-8 py-6 my-8 mx-2 bg-white font-body
+    rounded-lg shadow-lg shadow-blue-400/20
   }
 
   li {
-    @apply ml-5
-    text-sm font-normal text-gray-700 mb-1 tracking-wide
+    @apply text-base text-gray-700 leading-7 tracking-wider
   }
+
+ img{
+ @apply content-center
+ }
 
   blackquote {
     @apply bg-gray-100

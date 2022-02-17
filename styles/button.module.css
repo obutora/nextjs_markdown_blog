@@ -1,22 +1,19 @@
 
-
-@layer components{
     .btn {
-        @apply
-        cursor-pointer
-        inline-block ml-5 px-4 py-3 rounded-lg
+        @apply cursor-pointer
+        inline-block ml-5 px-4 py-3 rounded-xl
         focus:ring-2 focus:ring-blue-900
         hover:translate-y-0.5
         uppercase tracking-wider
         font-semibold shadow-lg text-sm 
-        transform transition
+        transform transition;
     }
 
     .btnP {
         @apply 
-        bg-blue-500
+        bg-primary
         hover:bg-blue-400 active:bg-blue-500
-        text-white 
+        text-bg-primary font-normal
     }
 
     .btnS {
@@ -25,7 +22,7 @@
         hover:bg-gray-400 active:bg-gray-600 
         text-gray-800
     }
-}
+
 
 
 

@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import marked from 'marked'
+import { marked } from 'marked'
 import Link from 'next/link'
 import btnStyle from '../../styles/button.module.css'
 
@@ -10,13 +10,25 @@ export default function PostPage({ frontmatter: { title, description, cover_imag
     content }) {
 
     return (
-        <div className="prose p-5 prose-blue bg-white rounded-2xl shadow-xl block mx-3 my-3 sm:mx-auto sm: max-w-2xl lg:max-w-4xl">
-            <h1>{title}</h1>
-            <img src={cover_image} />
-            <div className="post-body ">
+        <div>
+            <div className="px-8 md:mx-20 bg-white py-8">
+                <h1>{title}</h1>
+                <img src={cover_image} />
+                <div>
 
-                <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
+                    <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
+                </div>
+
+
             </div>
+            <div className='text-center my-12'>
+                <Link href={`/`}>
+                    <div className={btnStyle.btn + ' ' + btnStyle.btnP}>
+                        トップにもどる
+                    </div>
+                </Link>
+            </div>
+
         </div>
     )
 }

@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 
 
 function MyApp({ Component, pageProps }) {
-  return <div className='bg-gray-100'>
+  return <div className='bg-slate-100'>
     <Header />
     <main>
       <Component {...pageProps} />

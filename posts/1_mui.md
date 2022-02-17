@@ -12,16 +12,12 @@ cover_image: '/images/posts/img2.png'
 そんな課題を解決したい。
 mui - 幸せになるための時間管理アプリを作りました！
 
-### iOS版：
-[Mui - 幸せのための時間管理アプリ🍀 - App Store](https://apps.apple.com/jp/app/mui-幸せのための時間管理アプリ/id1585646872)
-
-### Android版：
-[Mui - 幸せのための時間管理アプリ🍀 - Apps on Google Play](https://play.google.com/store/apps/details?id=hagakun.time_tracking_app)  
+- iOS版：[Mui - 幸せのための時間管理アプリ🍀 - App Store](https://apps.apple.com/jp/app/mui-幸せのための時間管理アプリ/id1585646872)
+- Android版：[Mui - 幸せのための時間管理アプリ🍀 - Apps on Google Play](https://play.google.com/store/apps/details?id=hagakun.time_tracking_app)  
   
 <br>
 
-# 目次
-
+- # 目次
 - タイムイズマネーは、幸福度を上げるの？
 - 一生実施されない、41％のtodoリストより、幸せにフォーカスしようぜ。
 - 幸福度を上げる時間の使い方：金よりも時間のため、自分よりも人のため、ものより経験のため
@@ -88,7 +84,7 @@ Googleの検索ワードを見てみると、
 
 ### 一生消えないTodoリストより、幸せ時間にフォーカスしよう！
 
-"Todoリストの41%は一生消えない"
+ - **"Todoリストの41%は一生消えない"**
 
 iDoneThisが行った衝撃的な調査結果です。
 
@@ -146,7 +142,6 @@ Mui - 幸せになるための時間管理アプリ は「幸せ時間」にフ�
 ## Mui - 幸せになるための時間管理アプリをよろしくお願いします🙏
 
 ### iOS版：
-
 [](https://apps.apple.com/jp/app/mui-幸せのための時間管理アプリ/id1585646872)
 
 ### Android版：

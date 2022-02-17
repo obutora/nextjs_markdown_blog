@@ -5,18 +5,7 @@ excerpt: 'This is the excerpt'
 description: '服薬指導に使う薬剤師向け計算を一気に解決するアプリ'
 cover_image: '/images/posts/img3.png'
 ---
-# Phalc - 薬剤師向け電卓アプリ
-
-### **■はじめてのアプリ、リリースできた！**
-
-こんにちは、はがくんです🙋‍♂️四苦八苦しながらも、はじめてのアプリをリリースできました！
-
-> ・エンジニア経験ゼロの30歳がiOSとAndroid版を同時リリースできた！・アプリの個人開発って楽しい！・作ったアプリの紹介！
-> 
-
-3点だけ、画像多めで紹介するのでお付き合いください👨‍⚕️
-
-### **✅薬剤師向け電卓アプリ - Phalc**
+### **薬剤師向け電卓アプリ - Phalc**
 
 ![https://assets.st-note.com/production/uploads/images/46493863/picture_pc_9b7e5a93e9f54c463c1e4d10adafea9d.png](https://assets.st-note.com/production/uploads/images/46493863/picture_pc_9b7e5a93e9f54c463c1e4d10adafea9d.png)
 
@@ -36,14 +25,13 @@ cover_image: '/images/posts/img3.png'
 
 [カシオ 薬剤師電卓 力価計算 腎機能計算 10桁 ポケットサイズ SP-100PH](https://amzn.to/3dUTuZb)
 
-> ちなみにカシオの薬剤師用電卓って5000円もするんですわ...Phalcは完全無料でiOS、Androidに両方対応。電卓画面よりスマホ画面の方が、見やすい...ですよね？
-> 
+ - ちなみにカシオの薬剤師用電卓って5000円もするんですわ...Phalcは完全無料でiOS、Androidに両方対応。電卓画面よりスマホ画面の方が、見やすい...ですよね？
 
 さぁ、薬剤師フォロワーさん。👇からぜひダウンロードしてみてくださいな！  
 
-[iOS版：Appstore](https://apps.apple.com/us/app/phalc-%E8%96%AC%E5%89%A4%E5%B8%AB%E5%90%91%E3%81%91%E9%9B%BB%E5%8D%93%E3%82%A2%E3%83%97%E3%83%AA/id1553088820)  
+ - [iOS版：Appstore](https://apps.apple.com/us/app/phalc-%E8%96%AC%E5%89%A4%E5%B8%AB%E5%90%91%E3%81%91%E9%9B%BB%E5%8D%93%E3%82%A2%E3%83%97%E3%83%AA/id1553088820)  
 
-[Android版：Playストア](https://play.google.com/store/apps/details?id=hagakun.pharm_calc)
+ - [Android版：Playストア](https://play.google.com/store/apps/details?id=hagakun.pharm_calc)
 
 
 ### **■同時リリースができたのは、Flutterのおかげ！**
@@ -58,12 +46,12 @@ cover_image: '/images/posts/img3.png'
 
 そしたら、見つけちゃったんです、**Flutter....!!**
 
-**[Flutter - Beautiful native apps in record time***Flutter SDK is Google's UI toolkit for crafting beautiful, naflutter.dev*](https://flutter.dev/)
+[Flutter - Beautiful native apps in record time***Flutter SDK is Google's UI toolkit for crafting beautiful, naflutter.dev*](https://flutter.dev/)
 
 > iOS,Androidだけじゃなくて、Webも。Windows,Mac,LinuxどのOSでも。Flutterは全てのプラットフォームでアプリをリリースできる。マルチプラットフォームと言うやつです。
 > 
 
-最近では、**[すべての開発をFlutter（dart）で行う企業](https://type.jp/et/feature/15075/)**も出てきたりしてるみたい。Flutterは今後も大注目のフレームワークです！
+最近では、[すべての開発をFlutter（dart）で行う企業](https://type.jp/et/feature/15075/)も出てきたりしてるみたい。Flutterは今後も大注目のフレームワークです！
 
 僕みたいに、周りにエンジニア友達がいないけど、アプリ開発ってなんだか興味湧くな...!!!
 
