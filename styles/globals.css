@@ -20,7 +20,7 @@
   }
 
   p {
-    @apply text-lg font-normal text-gray-600 mt-4 leading-9 tracking-tight mb-8
+    @apply text-base font-normal text-gray-600 mt-4 leading-9 tracking-tight mb-8
   }
 
   a {
@@ -43,7 +43,7 @@
   }
 
   strong {
-    @apply font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-sky-500
+    @apply font-bold bg-clip-text
   }
 
   blackquote {
