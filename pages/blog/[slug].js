@@ -17,14 +17,12 @@ export default function PostPage({ frontmatter: { title, description, cover_imag
     return (
         <div>
             <Script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></Script>
-            <div className="px-12 md:mx-20 bg-white py-8 flex flex-col items-center shadow-lg shadow-sky-400/20">
+            <div className="block px-8 md:px-12 md:mx-20 bg-white py-8 shadow-lg shadow-sky-400/20">
                 <h1 className='my-4'>{title}</h1>
-                <Image src={cover_image} layout='fixed' objectFit='contain' width={400} height={200} className='w-full' res alt={title + 'Top Image'} />
+                <Image src={cover_image} width={800} height={300} objectFit="contain" res alt={title + 'Top Image'} />
                 <div className='mt-4'>
                     <div dangerouslySetInnerHTML={{ __html: content }} />
                 </div>
-
-
             </div>
             <div className='text-center my-12'>
 

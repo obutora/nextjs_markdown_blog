@@ -128,7 +128,7 @@ npm -v
  ```
   新しいターミナルを起動して、👆のコマンドを入力します。これはnpmを使ってdebugモードでアプリを走らせてね。という意味で、先ほど作成されたNext.jsのアプリが起動されます。ターミナルに**localhost:3000**という文字が表示されているハズなので、WindowsならCtrl、MacならCommandを押しながら、localhost:3000をクリックするとブラウザで開くことができます。
   
-  ![welcome to next.js](/images/posts/welcomenextjs.png)
+<img src ='/images/posts/welcomenextjs.png' width="400" style="display: block; margin: auto;"/>
 
   こんな感じでアプリが表示されていれば成功です！おめでとうございます🎉    
 
@@ -148,6 +148,6 @@ pagesフォルダの中にindex.jsが作成されており、その内容がloca
 
 ```
 
-ブラウザを更新して、行事が切り替われば成功です。  
+ブラウザを更新して、表示が切り替われば成功です。  
 ただし、localhostは自分のネットワーク上でしか公開されていない状態です。そのため、まずはGitHubにコードをアップロードして、さらにVercelからGitHubにアクセスしてファイルを公開していきましょう。　　
 
