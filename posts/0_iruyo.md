@@ -6,4 +6,6 @@ description: 'かかりつけ薬剤師が配布するシフトを生成するWeb
 cover_image: '/images/posts/iruyo.png'
 ---
 
-[Iruyo - かかりつけ薬剤師のための配布ジェネレーター](https://iruyo-tailwind-flutterweb.pages.dev/)
+[Iruyo - かかりつけ薬剤師のための配布ジェネレーター](https://iruyo-tailwind-flutterweb.pages.dev/)  
+
+詳しい説明は[Zenn](https://zenn.dev/hagakun_dev/articles/ad8f4fd7f8516b)で書いたので、そちらを参照ください👍
