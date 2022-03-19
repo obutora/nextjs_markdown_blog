@@ -6,41 +6,42 @@ import matter from 'gray-matter'
 import Footer from '../components/Footer'
 import Image from 'next/image'
 import SnsIcon from '../components/SnsIcon'
-import { useEffect } from 'react/cjs/react.development'
-import anime from 'animejs'
 import ContentCard from '../components/ContentCard'
+import { useEffect } from 'react'
+import anime from 'animejs'
 import Script from 'next/script'
 
-
 export default function Home({ posts }) {
+
   useEffect(() => {
-    <Script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></Script>
-    // Hero Image のParallax
-    var hero = document.getElementsByClassName('hero');
-    new simpleParallax(hero, {
-      // scale: 1.6,
-      overflow: false,
-      delay: .6,
-      transition: 'cubic-bezier(0,0,0,1)'
-    });
+    <Script src='https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js'></Script>
 
-    var contentImage = document.getElementsByClassName('contentImage');
-    new simpleParallax(contentImage, {
-      scale: 1.1,
-      overflow: false,
-      orientation: 'left',
-      delay: .6,
-      transition: 'cubic-bezier(0,0,0,1)'
-    });
+    // // Hero Image のParallax
+    // var hero = document.getElementsByClassName('hero');
+    // new simpleParallax(hero, {
+    //   // scale: 1.6,
+    //   overflow: false,
+    //   delay: .6,
+    //   transition: 'cubic-bezier(0,0,0,1)'
+    // });
 
-    var contentImage2 = document.getElementsByClassName('contentImage2');
-    new simpleParallax(contentImage2, {
-      scale: 1.1,
-      overflow: false,
-      orientation: 'right',
-      delay: .6,
-      transition: 'cubic-bezier(0,0,0,1)'
-    });
+    // var contentImage = document.getElementsByClassName('contentImage');
+    // new simpleParallax(contentImage, {
+    //   scale: 1.1,
+    //   overflow: false,
+    //   orientation: 'left',
+    //   delay: .6,
+    //   transition: 'cubic-bezier(0,0,0,1)'
+    // });
+
+    // var contentImage2 = document.getElementsByClassName('contentImage2');
+    // new simpleParallax(contentImage2, {
+    //   scale: 1.1,
+    //   overflow: false,
+    //   orientation: 'right',
+    //   delay: .6,
+    //   transition: 'cubic-bezier(0,0,0,1)'
+    // });
 
     let options = {
       root: null,
@@ -48,7 +49,7 @@ export default function Home({ posts }) {
       threshold: 0
     }
 
-    let linkBlock = document.querySelectorAll('section.link')
+    let linkBlock = document.querySelectorAll('.title')
     let observer = new IntersectionObserver(leftInAnimation, options);
 
     linkBlock.forEach(
@@ -61,12 +62,13 @@ export default function Home({ posts }) {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           anime({
-            targets: '.LeftIn',
+            targets: '.title',
             easing: 'easeOutCirc',
+            elasticity: 400,
             opacity: [0, 1],
-            translateX: [-60, 0],
-            delay: anime.stagger(160),
-            duration: 1200
+            translateX: [-80, 0],
+            delay: anime.stagger(120),
+            duration: 600
           })
         }
       });
@@ -95,10 +97,7 @@ export default function Home({ posts }) {
         }
       });
     }
-
-    Animon.animon();
   }, [])
-
 
 
   return (
@@ -108,9 +107,7 @@ export default function Home({ posts }) {
         <meta name="description" content="Hagakunのポートフォリオサイトです。作ってきたコンテンツを紹介します。" />
         <meta name="robots" content="index" />
         <link rel="icon" href="/favicon.ico" />
-        <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
-        <link rel="stylesheet" href="https://unpkg.com/animon@1.0.1/dist/animon.css" />
-        <script src="https://unpkg.com/animon@1.0.1/dist/animon.iife.js"></script>
+        {/* <link rel="stylesheet" href="https://unpkg.com/animon@1.0.1/dist/animon.css" /> */}
       </Head>
 
       <div className="flex flex-col min-w-0 mx-auto max-w-md shadow-2xl shadow-slate-400/60 rounded-xl">
@@ -123,8 +120,8 @@ export default function Home({ posts }) {
 
           <div id="titleText" className="animonItem px-4 absolute bottom-2">
             <div className='bg-white relative'>
-              <p className="text-sm bg-white absolute -top-12">薬剤師 × エンジニア</p>
-              <h1 className="px-2 text-3xl tracking-wide text-white font-bold bg-white bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-fuchsia-600">
+              <p className="title text-sm bg-white absolute -top-12">薬剤師 × エンジニア</p>
+              <h1 className="title px-2 text-3xl tracking-wide text-white font-bold bg-white bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-fuchsia-600">
                 はがくん
               </h1>
 
@@ -150,7 +147,7 @@ export default function Home({ posts }) {
         </section>
 
         <section className="pl-8">
-          <div className="animonItem">
+          <div className="title">
             <h2 className="mt-8 mb-2 text-black font-thin font-body tracking-wider">Contents</h2>
           </div>
           <div id="contentsCol">

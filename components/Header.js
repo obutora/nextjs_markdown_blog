@@ -19,18 +19,13 @@ export default function Header() {
 
     return (
         <header className="bg-primary mx-auto font-body overflow-hidden">
-            <Head>
-                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-            </Head>
             <div className="p-3 ml-3 space-x-4 flex items-center">
-                <Link href='/'>
-                    <div className='flex items-center'>
+                <div className='flex items-center'>
+                    <Link href='/'>
                         <Image src='/logo_200.png' width={50} height={50} alt={'header logo'} />
-                        <div className='mx-2'></div>
                         <a className={detector(router.pathname, '/')}>Home</a>
-                    </div>
-
-                </Link>
+                    </Link>
+                </div>
                 <Link href='/'>
                     <a className={detector(router.pathname, '/blog/[slug]')}>Content</a>
                 </Link>

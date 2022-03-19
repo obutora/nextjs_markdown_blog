@@ -15,10 +15,9 @@ export default function PostPage({ frontmatter: { title, description, cover_imag
     slug,
     content }) {
 
+    <Script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></Script>
     return (
         <div>
-
-            <Script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></Script>
             <div className="block sm:mx-8 my-8 px-8 md:px-12 md:mx-20 bg-white py-8 shadow-lg shadow-sky-400/20">
                 <h1 className='my-4'>{title}</h1>
                 <Image src={cover_image} width={800} height={300} objectFit="contain" res alt={title + 'Top Image'} />
@@ -27,11 +26,13 @@ export default function PostPage({ frontmatter: { title, description, cover_imag
                 </div>
                 <div className='text-center my-12'>
 
-                    <Link href={`/`}>
-                        <div className={btnStyle.btn + ' ' + btnStyle.btnP}>
-                            トップにもどる
-                        </div>
-                    </Link>
+                    <div className={btnStyle.btn + ' ' + btnStyle.btnP}>
+                        <Link href={`/`}>
+                            <a className='text-white no-underline'>
+                                トップにもどる
+                            </a>
+                        </Link>
+                    </div>
                 </div>
                 <Footer textColor={'text-primary'} bg={'bg-white'} />
             </div>

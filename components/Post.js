@@ -14,7 +14,7 @@ export default function Post({ post }) {
         <>
             <div className="prose-sm m-3 flex flex-col self-stretch max-h-full relative">
                 <div className='rounded-xl flex-grow bg-white mx-auto pb-1 max-w-lg shadow-lg shadow-blue-200/40 sm:max-w-2xl'>
-                    <Image src={post.frontmatter.cover_image} width={800} height={800 / 1.9} className="object-center rounded-t-2xl" />
+                    <Image src={post.frontmatter.cover_image} width={800} height={800 / 1.9} className="object-center rounded-t-2xl" alt={post.frontmatter.title} />
 
 
                     <div className='mt-3 mx-5 post-date text-sm text-gray-400 font-semibold'>{post.frontmatter.date} </div>
@@ -26,11 +26,13 @@ export default function Post({ post }) {
                     <div className="flex mr-3 mb-4 absolute bottom-0 right-0">
 
                         {/* ここでblog/[slug]に飛ばす */}
-                        <Link href={`/blog/${post.slug}`}>
-                            <div className={btnStyle.btn + ' ' + btnStyle.btnP}>
-                                もっと読む
-                            </div>
-                        </Link>
+                        <div className={btnStyle.btn + ' ' + btnStyle.btnP}>
+                            <Link href={`/blog/${post.slug}`}>
+                                <a className='text-white'>
+                                    もっと読む
+                                </a>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
