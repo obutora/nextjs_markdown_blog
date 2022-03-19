@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.4.1",
+    "animejs": "^3.2.1",
     "cheerio": "^1.0.0-rc.10",
     "cherio": "^1.0.0-rc.2",
     "gray-matter": "^4.0.3",

@@ -18,9 +18,9 @@ export default function Header() {
 
 
     return (
-        <header className="bg-primary">
+        <header className="bg-primary mx-auto font-body overflow-hidden">
             <Head>
-                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
             </Head>
             <div className="p-3 ml-3 space-x-4 flex items-center">
                 <Link href='/'>

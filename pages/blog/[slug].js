@@ -9,6 +9,7 @@ import Script from 'next/script'
 import cheerio from 'cheerio'
 import hljs from 'highlight.js'
 import 'highlight.js/styles/atom-one-dark.css';
+import Footer from '../../components/Footer'
 
 export default function PostPage({ frontmatter: { title, description, cover_image },
     slug,
@@ -16,22 +17,25 @@ export default function PostPage({ frontmatter: { title, description, cover_imag
 
     return (
         <div>
+
             <Script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></Script>
-            <div className="block px-8 md:px-12 md:mx-20 bg-white py-8 shadow-lg shadow-sky-400/20">
+            <div className="block sm:mx-8 my-8 px-8 md:px-12 md:mx-20 bg-white py-8 shadow-lg shadow-sky-400/20">
                 <h1 className='my-4'>{title}</h1>
                 <Image src={cover_image} width={800} height={300} objectFit="contain" res alt={title + 'Top Image'} />
                 <div className='mt-4'>
                     <div dangerouslySetInnerHTML={{ __html: content }} />
                 </div>
-            </div>
-            <div className='text-center my-12'>
+                <div className='text-center my-12'>
 
-                <Link href={`/`}>
-                    <div className={btnStyle.btn + ' ' + btnStyle.btnP}>
-                        トップにもどる
-                    </div>
-                </Link>
+                    <Link href={`/`}>
+                        <div className={btnStyle.btn + ' ' + btnStyle.btnP}>
+                            トップにもどる
+                        </div>
+                    </Link>
+                </div>
+                <Footer textColor={'text-primary'} bg={'bg-white'} />
             </div>
+
 
         </div>
     )

@@ -1,6 +1,6 @@
 ---
 title: 'LP Training'
-date: 'Feburary 17 2022'
+date: 'Feburary 10 2022'
 excerpt: 'This is the excerpt'
 description: 'LPの練習の為、bird and insectさんのサイトをコピーさせて頂きました。'
 cover_image: '/images/posts/lp.png'

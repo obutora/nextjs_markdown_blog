@@ -18,6 +18,8 @@ module.exports = {
       colors: {
         'primary': '#5CACF2',
         'bg-primary': '#F2F2F2',
+        "kBlack": '#09141c',
+        "twitter": '#57AEF3',
       }
     },
   },
